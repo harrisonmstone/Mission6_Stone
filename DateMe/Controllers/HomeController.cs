@@ -39,6 +39,10 @@ namespace DateMe.Controllers
             _context.Application.Add(response);
             _context.SaveChanges();
 
+            // var movieSet = _context.Movies.Include(x => x.Category).ToList();
+
+            // x.CategoryName
+
             return View(response);
         }
     }
